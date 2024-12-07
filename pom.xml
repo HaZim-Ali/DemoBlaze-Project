@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>DemoBlaze_HaZim-Aly</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+
+        <!-- Selenium Java Dependency: For browser automation testing -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.18.1</version>
+        </dependency>
+
+        <!-- Cucumber Java Dependency: For BDD-style testing in Java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.15.0</version>
+        </dependency>
+
+        <!-- Cucumber TestNG Dependency: For using Cucumber with TestNG framework -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.15.0</version>
+        </dependency>
+
+        <!-- JavaFaker Dependency: For generating fake data in tests -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.14.0</version>
+        </dependency>
+
+    </dependencies>
+
+
+
+    <build>
+        <plugins>
+
+            <!-- Surefire Plugin: For test execution management -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M4</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore> <!-- Ignore test failures during build -->
+                    <runOrder>Alphabetical</runOrder> <!-- Run tests in alphabetical order -->
+                    <includes>
+                        <include>**/*runners.java</include> <!-- Specifies test runner files -->
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <!-- Cucumber Reporting Plugin: For generating HTML reports from test results -->
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>5.7.0</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>verify</phase> <!-- Run during the verify phase -->
+                        <goals>
+                            <goal>generate</goal> <!-- Goal to generate HTML reports -->
+                        </goals>
+                        <configuration>
+                            <projectName>DemoBlaze Report</projectName> <!-- Report title -->
+                            <outputDirectory>${project.build.directory}</outputDirectory> <!-- Output directory for reports -->
+                            <inputDirectory>${project.build.directory}</inputDirectory> <!-- Directory for JSON inputs -->
+                            <jsonFiles>
+                                <param>**/cucumber*.json</param> <!-- Pattern for locating JSON files -->
+                            </jsonFiles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
