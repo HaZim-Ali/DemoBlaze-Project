@@ -38,10 +38,10 @@ public class Hooks {
 
     @After
     public void closeBrowser() throws InterruptedException {
-//        Thread.sleep(5000);  // Just a small wait before quitting
-//        if (HZM != null) {
-//            HZM.quit();  // Quit the driver after the test
-//        }
+        Thread.sleep(1000);
+        if (HZM != null) {
+            HZM.quit();  // Quit the driver after the test
+        }
     }
 
 }

@@ -13,6 +13,6 @@ public class Cart_Locate {
         return HZM.findElement(By.xpath("\"//li[@class=\\\"nav-item\\\"]//a[@id=\\\"cartur\\\"]\""));
     }
     public WebElement HomeButton (){
-        return HZM.findElement(By.xpath("//div[@class=\"container\"]//a[@class=\"navbar-brand\"]"));
+        return HZM.findElement(By.xpath("//a[contains(text(),'Home')]"));
     }//class="navbar-brand"
 }

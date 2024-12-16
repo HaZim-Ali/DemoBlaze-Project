@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 
         // Uncomment the line below to run only tests with a specific tag, such as "@Regression"
-        tags = "@Hazim"
+        tags = "@hazim"
 
         // Monochrome makes the console output cleaner and easier to read (no color codes)
 //        monochrome = true

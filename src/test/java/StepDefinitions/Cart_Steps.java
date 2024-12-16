@@ -10,15 +10,15 @@ public class Cart_Steps {
 
 
     @And("navigate to home page")
-    public void navigate_to_home_page(){
+    public void navigate_to_home_page() {
         verifyCart.HomeButton().click();
     }
     @And("verify that both products are in the cart")
     public void verify_that_both_products_are_in_the_cart (){
         verifyCart.bothProducts().click();
     }
-    @Then("products added successfully")
-    public void products_added_successfully(){
+    @Then("Both products are visible in the cart with their respective titles and prices")
+    public void Both_products_are_visible_in_the_cart_with_their_respective_titles_and_prices(){
 
     }
 }

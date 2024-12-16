@@ -42,12 +42,12 @@ public class Sign_Up_Steps {
         login.passwordL().sendKeys("Hazim1234");
     }
     @And("click on login button")
-    public void click_on_login_button(){
+    public void click_on_login_button() {
 
         login.loginButton().click();
     }
-    @Then("user login successfully")
-    public void user_login_successfully(){
+    @Then("user login successfully and navigate to home page")
+    public void user_login_successfully_and_navigate_to_home_page(){
 
     }
 }

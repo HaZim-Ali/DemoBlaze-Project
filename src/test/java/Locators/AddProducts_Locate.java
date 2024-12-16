@@ -36,7 +36,7 @@ public class AddProducts_Locate {
 
         return HZM.findElement(By.xpath("/html/body/div[5]/div/div[2]/div[2]/div/a"));
     }
-    public WebElement CartButton (){
+    public WebElement CartButton2 () {
 
         return HZM.findElement(By.xpath("//li[@class=\"nav-item\"]//a[@id=\"cartur\"]"));
     }

@@ -9,9 +9,9 @@ Feature:Verify the products in the cart
     And Product 1 is added to the cart with confirmation
     And Click on the Cart button in the Header
     And navigate to home page
-#    And click on Laptops under categories on the homepage
-#    And choose Product 2 on Laptops category
-#    And Product 2 is added to the cart with confirmation
-#    And Click on the Cart button in the Header
-#    And verify that both products are in the cart
-#    Then products added successfully
+    And click on Laptops under categories on the homepage
+    And choose Product 2 on Laptops category
+    And Product 2 is added to the cart with confirmation
+    And Click on the Cart button in the Header
+    And verify that both products are in the cart
+    Then Both products are visible in the cart with their respective titles and prices

@@ -23,7 +23,7 @@ public class AddProducts_Steps {
         Cart.AddToCard1().click();
     }
     @And("Click on the Cart button in the Header to verify a product add to cart")
-    public void Click_on_the_Cart_button_in_the_Header_to_verify_a_product_add_to_cart(){
+    public void Click_on_the_Cart_button_in_the_Header_to_verify_a_product_add_to_cart() {
 
         Cart.CartButton1().click();
     }
@@ -41,6 +41,6 @@ public class AddProducts_Steps {
     @And("Click on the Cart button in the Header")
     public void Click_on_the_Cart_button_in_the_Header(){
 
-        Cart.CartButton().click();
+        Cart.CartButton2().click();
     }
 }
