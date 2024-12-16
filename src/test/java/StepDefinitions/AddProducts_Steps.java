@@ -8,7 +8,7 @@ public class AddProducts_Steps {
     AddProducts_Locate Cart = new AddProducts_Locate();
 
     @And("click on Laptops under categories on the homepage")
-    public void click_on_Laptops_under_categories_on_the_homepage(){
+    public void click_on_Laptops_under_categories_on_the_homepage()  {
 
         Cart.LaptopIcon().click();
     }
@@ -18,9 +18,14 @@ public class AddProducts_Steps {
         Cart.Product1Laptops().click();
     }
     @And("Product 1 is added to the cart with confirmation")
-    public void Product_1_is_added_to_the_cart_with_confirmation(){
+    public void Product_1_is_added_to_the_cart_with_confirmation()  {
 
         Cart.AddToCard1().click();
+    }
+    @And("Click on the Cart button in the Header to verify a product add to cart")
+    public void Click_on_the_Cart_button_in_the_Header_to_verify_a_product_add_to_cart(){
+
+        Cart.CartButton1().click();
     }
 
     @And("choose Product 2 on Laptops category")

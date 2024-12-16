@@ -11,17 +11,23 @@ public class AddProducts_Locate {
     // Locators and actions for login functionality
 
 
-    public WebElement LaptopIcon() {
+    public WebElement LaptopIcon()  {
+
         return HZM.findElement(By.xpath("/html/body/div[5]/div/div[1]/div/a[3]"));
     }
     public WebElement Product1Laptops(){
 
         return HZM.findElement(By.linkText("Sony vaio i5"));
     }
-    public WebElement AddToCard1(){
+    public WebElement AddToCard1()  {
 
         return HZM.findElement(By.xpath("/html/body/div[5]/div/div[2]/div[2]/div/a"));
     }
+    public WebElement CartButton1 (){
+
+        return HZM.findElement(By.xpath("//li[@class=\"nav-item\"]//a[@id=\"cartur\"]"));
+    }
+
     public WebElement Product2Laptops(){
 
         return HZM.findElement(By.linkText("Sony vaio i7"));
@@ -32,7 +38,8 @@ public class AddProducts_Locate {
     }
     public WebElement CartButton (){
 
-        return HZM.findElement(By.xpath("/html/body/nav/div/div/ul/li[4]/a"));
+        return HZM.findElement(By.xpath("//li[@class=\"nav-item\"]//a[@id=\"cartur\"]"));
     }
+
 
     }

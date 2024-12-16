@@ -12,15 +12,15 @@ import io.cucumber.testng.CucumberOptions;
         glue = "StepDefinitions",  // Replace with your package for step definitions
 
         // Report configuration: Using ExtentReports adapter for better test reporting
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 
         // Uncomment the line below to run only tests with a specific tag, such as "@Regression"
-      //  tags = "@1"
+        tags = "@Hazim"
 
         // Monochrome makes the console output cleaner and easier to read (no color codes)
 //        monochrome = true
 )
-public class Runner extends AbstractTestNGCucumberTests {
+public class runnerClass extends AbstractTestNGCucumberTests {
 
 
 }

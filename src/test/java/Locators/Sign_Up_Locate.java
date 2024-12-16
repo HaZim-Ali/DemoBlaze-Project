@@ -37,6 +37,6 @@ public class Sign_Up_Locate {
         return HZM.findElement(By.xpath("//*[@id=\"loginpassword\"]"));
     }
     public WebElement loginButton(){
-        return HZM.findElement(By.xpath("//*[@id=\"logInModal\"]/div/div/div[3]/button[2]"));
+        return HZM.findElement(By.xpath("//button[contains(text(),'Log in')]"));
     }
 }
