@@ -158,7 +158,7 @@ Contributions are welcome! If you would like to improve this project:
 
 
 # Author
-Developed by **Eng.Hazim Aly**.
+Developed by **Eng.HaZim Aly**.
 
 For inquiries or collaboration, feel free to reach out:
 
