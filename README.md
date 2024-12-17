@@ -33,6 +33,7 @@ The code is structured following the Page Object Model (POM) for improved readab
 # Project Structure
 The following is the directory structure of the project:
 
+```
 
 _**DemoBlaze_HaZim-Aly/
 │
@@ -69,7 +70,7 @@ _**DemoBlaze_HaZim-Aly/
 └── TestRunners/
 └── runnerClass.java
 
-
+```
 
 # Key Components
 * Features: Contains Cucumber .feature files describing test scenarios in Gherkin syntax.
