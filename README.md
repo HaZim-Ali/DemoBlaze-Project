@@ -174,7 +174,7 @@ For inquiries or collaboration, feel free to reach out:
 # Future Enhancements
 * **Parallel Execution:** Implement parallel test execution using TestNG or Cucumber.
 * **CI/CD Integration:** Integrate with Jenkins or GitHub Actions for automated test runs.
-* **Data-Driven Testing:** Use external data sources (e.g., Excel, JSON).
+* **Data-Driven Testing:** Use external data sources ( Excel, JSON).
 * **Cross-Browser Testing:** Add support for Firefox and Edge browsers.
 
 
