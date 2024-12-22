@@ -1,17 +1,17 @@
 package Locators;
 
 import StepDefinitions.Hooks;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+
 
 public class Checkout_Locate {
 
     WebDriver HZM = Hooks.HZM;
 
-    public WebElement PlaceOrderButton (){
-        return HZM.findElement(By.xpath("//div[@id=\"page-wrapper\"]//div[@class=\"col-lg-1\"]//button"));
+    public WebElement PurchaseB (){
+        return HZM.findElement(By.xpath("/html/body/div[6]/div/div[2]/button"));
     }
+
     public WebElement userNameH (String name){
         return HZM.findElement(By.xpath("//input[@id=\"name\"]"));
     }

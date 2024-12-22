@@ -14,10 +14,10 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>DemoBlaze_HaZim Aly</documentTitle>
+        <documentTitle>DemoBlaze_HaZim-Aly</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>DemoBlaze_HaZim Aly UI </reportName>
+        <reportName>DemoBlaze_HaZim-Aly UI </reportName>
 
         <!-- view report without internet -->
         <offlineMode>true</offlineMode>

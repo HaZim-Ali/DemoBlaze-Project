@@ -12,15 +12,13 @@ import java.time.Duration;
 public class Hooks {
     public static WebDriver HZM;
 
-    // Getter for WebDriver (so it can be accessed in step definitions)
     public static WebDriver getDriver() {
         return HZM; // Access the driver here
     }
 
-    // Before hook to initialize the WebDriver based on the chosen browser
     @Before
     public void openBrowser() {
-        String browserName = "chrome";  // This could be parameterized
+        String browserName = "chrome";
         if (browserName.contains("chrome")) {
             HZM = new ChromeDriver();
         } else if (browserName.contains("edge")) {
@@ -28,7 +26,7 @@ public class Hooks {
         } else if (browserName.contains("firefox")) {
             HZM = new FirefoxDriver();
         } else {
-            HZM = new ChromeDriver();  // Default to Chrome
+            HZM = new ChromeDriver();
         }
 
         HZM.manage().window().maximize();
@@ -40,7 +38,7 @@ public class Hooks {
     public void closeBrowser() throws InterruptedException {
         Thread.sleep(1000);
         if (HZM != null) {
-            HZM.quit();  // Quit the driver after the test
+            HZM.quit();
         }
     }
 

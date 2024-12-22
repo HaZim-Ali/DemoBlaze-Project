@@ -44,6 +44,7 @@ public class Sign_Up_Locate {
     }
 
     public WebElement loginButton() {
+
         return HZM.findElement(By.xpath("//button[contains(text(),'Log in')]"));
     }
 }

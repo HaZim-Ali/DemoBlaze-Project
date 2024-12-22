@@ -6,7 +6,7 @@ Feature: Ensure that the user can add products to the cart
 #    And click on login button
     And click on Laptops under categories on the homepage
     And choose Product 1 on Laptops category
-    And Product 1 is added to the cart with confirmation
+    Then Product 1 is added to the cart with confirmation
 
 
 
@@ -19,7 +19,7 @@ Feature: Ensure that the user can add products to the cart
 #    And click on login button
       And click on Laptops under categories on the homepage
       And choose Product 2 on Laptops category
-      And Product 2 is added to the cart with confirmation
+      Then Product 2 is added to the cart with confirmation
 
 
 

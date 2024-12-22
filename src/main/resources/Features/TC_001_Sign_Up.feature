@@ -10,4 +10,3 @@ Feature: To sign up functionality
       Given click on login
       When user fill username and password
       And click on login button
-      Then user login successfully and navigate to home page

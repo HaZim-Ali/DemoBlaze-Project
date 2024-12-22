@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 public class AddProducts_Locate {
 
     WebDriver HZM= Hooks.HZM;
-    // Locators and actions for login functionality
 
 
     public WebElement LaptopIcon()  {

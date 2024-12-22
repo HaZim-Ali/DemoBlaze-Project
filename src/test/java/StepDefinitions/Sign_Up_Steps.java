@@ -46,8 +46,5 @@ public class Sign_Up_Steps {
 
         login.loginButton().click();
     }
-    @Then("user login successfully and navigate to home page")
-    public void user_login_successfully_and_navigate_to_home_page(){
 
-    }
 }
