@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class AmountCalculation_Locate {
+public class
+AmountCalculation_Locate {
 
     public void goToCartPage() {
         WebElement cartButton = Hooks.HZM.findElement(By.xpath("//*[@id=\"navbarExample\"]/ul/li[4]/a"));

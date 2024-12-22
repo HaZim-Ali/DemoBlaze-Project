@@ -36,10 +36,10 @@ public class Hooks {
 
     @After
     public void closeBrowser() throws InterruptedException {
-        Thread.sleep(1000);
-        if (HZM != null) {
-            HZM.quit();
-        }
+//        Thread.sleep(1000);
+//        if (HZM != null) {
+//            HZM.quit();
+//        }
     }
 
 }
