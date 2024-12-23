@@ -74,13 +74,33 @@ public class Sign_Up_Steps {
     @When("user fill username and password")
     public void user_fill_username_and_password() throws InterruptedException {
         Thread.sleep(3);
-        login.usernameL().sendKeys("Hazim_Aly_NEW");
-        login.passwordL().sendKeys("Hazim1234");
+        login.usernameL().sendKeys("Mazen_Aly_NEW");
+        login.passwordL().sendKeys("Mazin1234");
     }
     @And("click on login button")
     public void click_on_login_button() {
 
         login.loginButton().click();
     }
+    @When("user fill invalid {string} and {string}")
+    public void user_fill_invalid(String username , String password){
+        login.usernameL().sendKeys(username);
+        login.passwordL().sendKeys(password);
+    }
+    @Then("user cannot log in successfully")
+    public void user_cannot_log_in_successfully(){
+        WebDriverWait wait1= new WebDriverWait(Hooks.HZM, Duration.ofSeconds(50));
+        Alert alert = wait1.until(ExpectedConditions.alertIsPresent());
+
+        // Validate the confirmation message
+        String expectedMessage = "User does not exist.";
+        String actualMessage = alert.getText();
+        Assert.assertEquals(actualMessage, expectedMessage, "Alert message mismatch for invalid log in");
+
+        // Accept the alert
+        alert.accept();
+    }
+
+
 
 }
