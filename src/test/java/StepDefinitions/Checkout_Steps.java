@@ -3,7 +3,6 @@ package StepDefinitions;
 import Locators.Checkout_Locate;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.testng.Assert;
 
 public class Checkout_Steps {
 
@@ -42,8 +41,8 @@ public class Checkout_Steps {
             PlaceOrder.PurchaseButton().click();
         }
 
-        @Then("purchase successfully")
-        public void purchase_successfully() {
+        @Then("A success message should be displayed Thank you for your purchase")
+        public void A_success_message_should_be_displayed_Thank_you_for_your_purchase() {
             PurchaseButton1.PurchaseButton().click();
 
         }

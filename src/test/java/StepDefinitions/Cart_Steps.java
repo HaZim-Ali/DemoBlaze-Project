@@ -5,7 +5,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
 import java.util.Arrays;
 import java.util.List;
 

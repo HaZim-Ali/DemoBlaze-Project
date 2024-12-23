@@ -11,9 +11,10 @@ import java.time.Duration;
 
 public class Hooks {
     public static WebDriver HZM;
-
+    // Access the driver here
     public static WebDriver getDriver() {
-        return HZM; // Access the driver here
+
+        return HZM;
     }
 
     @Before
@@ -36,10 +37,10 @@ public class Hooks {
 
     @After
     public void closeBrowser() throws InterruptedException {
-//        Thread.sleep(1000);
-//        if (HZM != null) {
-//            HZM.quit();
-//        }
+        Thread.sleep(10000);
+        if (HZM != null) {
+            HZM.quit();
+        }
     }
 
 }

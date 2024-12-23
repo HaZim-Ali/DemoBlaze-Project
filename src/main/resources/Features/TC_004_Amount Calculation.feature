@@ -1,5 +1,8 @@
 Feature: Verify Total Amount Calculation
   Scenario: Ensure that the total amount is calculated correctly
+    Given click on login
+    When user fill username and password
+    And click on login button
     And click on Laptops under categories on the homepage
     And choose Product 1 on Laptops category
     And Product 1 is added to the cart with confirmation

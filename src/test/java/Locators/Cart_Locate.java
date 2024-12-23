@@ -30,21 +30,24 @@ public class Cart_Locate {
 
     // Fetch product title elements
     public List<WebElement> getCartProductTitles() {
-        return HZM.findElements(By.xpath("//tbody/tr//td[2]")); // Adjust column index for product title
+
+        return HZM.findElements(By.xpath("//tbody/tr//td[2]"));
     }
 
     // Fetch product price elements
     public List<WebElement> getCartProductPrices() {
-        return HZM.findElements(By.xpath("//tbody/tr//td[3]")); // Adjust column index for product price
+
+        return HZM.findElements(By.xpath("//tbody/tr//td[3]"));
     }
 
     // Locator for the total price element
     public WebElement getTotalPriceElement() {
-        return HZM.findElement(By.xpath("//h3[@id='totalp']")); // Update XPath based on actual total price locator
+
+        return HZM.findElement(By.xpath("//h3[@id='totalp']"));
     }
 
-    // Locator for the Home button
     public WebElement HomeButton() {
+
         return HZM.findElement(By.xpath("//a[contains(text(),'Home')]"));
     }
 }
