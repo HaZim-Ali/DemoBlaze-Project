@@ -25,8 +25,8 @@ public class Sign_Up_Steps {
 
     @When("user sign up with valid username and password")
     public void user_sign_up_with_valid_username_and_password() {
-        sign_up.username().sendKeys("Mazen_Aly_NEW");
-        sign_up.password().sendKeys("Mazin1234");
+        sign_up.username().sendKeys("Hatem_Aly_NEW");
+        sign_up.password().sendKeys("Hatem1234");
     }
 
     @Then("sign up not successfully")
@@ -74,8 +74,8 @@ public class Sign_Up_Steps {
     @When("user fill username and password")
     public void user_fill_username_and_password() throws InterruptedException {
         Thread.sleep(3);
-        login.usernameL().sendKeys("Mazen_Aly_NEW");
-        login.passwordL().sendKeys("Mazin1234");
+        login.usernameL().sendKeys("Hatem_Aly_NEW");
+        login.passwordL().sendKeys("Hatem1234");
     }
     @And("click on login button")
     public void click_on_login_button() {
